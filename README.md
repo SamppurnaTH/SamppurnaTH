@@ -187,33 +187,7 @@
 <tr>
 <td width="50%">
 
-<h3 align="center">🧠 Mental Health Predictor</h3>
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/mental-health-predictor">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=mental-health-predictor&theme=algolia&hide_border=true" />
-  </a>
-</div>
-<p align="center">
-  <strong>Full-stack AI app combining data science with modern web development</strong><br>
-  • Integrated XGBoost for risk prediction<br>
-  • TextBlob NLP for real-time sentiment scoring<br>
-  • Dynamic dashboards with explainable AI results<br>
-  • Next.js frontend with Flask ML backend
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
-  <img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logo=xgboost&logoColor=white"/>
-  <a href="https://mental-health-predictor-phi.vercel.app">
-    <img src="https://img.shields.io/badge/Live_Demo-46a2f1?style=flat-square&logo=vercel&logoColor=white"/>
-  </a>
-</p>
-
-</td>
-<td width="50%">
-
-<h3 align="center">🩺 Breast Cancer Detection</h3>
+<h3 align="center">🩺 Breast Cancer Detection (SVM)</h3>
 <div align="center">  
   <a href="https://github.com/SamppurnaTH/breast-cancer-svm">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=breast-cancer-svm&theme=algolia&hide_border=true" />
@@ -231,6 +205,29 @@
   <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
   <img src="https://img.shields.io/badge/97%25-Accuracy-brightgreen?style=flat-square"/>
+</p>
+
+</td>
+<td width="50%">
+
+<h3 align="center">🩺 Breast Cancer Detection (Logistic Regression)</h3>
+<div align="center">  
+  <a href="https://github.com/SamppurnaTH/breast-cancer-logistic-regression">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=breast-cancer-logistic-regression&theme=algolia&hide_border=true" />
+  </a>
+</div>
+<p align="center">
+  <strong>Logistic Regression approach for breast cancer classification</strong><br>
+  • Alternative ML approach to cancer detection<br>
+  • Feature selection and importance analysis<br>
+  • Model evaluation and comparison with other algorithms<br>
+  • Comprehensive documentation and analysis
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Logistic_Regression-8A2BE2?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white"/>
 </p>
 
 </td>
@@ -255,7 +252,7 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/KMeans-Clustering-blue?style=flat-square"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=python&logoColor=white"/>
 </p>
 
 </td>
@@ -263,22 +260,22 @@
 
 <h3 align="center">🏥 CKD Risk Predictor</h3>
 <div align="center">  
-  <a href="https://github.com/SamppurnaTH/ckd-prediction">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=ckd-prediction&theme=algolia&hide_border=true" />
+  <a href="https://github.com/SamppurnaTH/CKD">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=CKD&theme=algolia&hide_border=true" />
   </a>
 </div>
 <p align="center">
   <strong>AI model for Chronic Kidney Disease risk prediction</strong><br>
-  • Achieved 89% ROC-AUC score<br>
   • Multiple algorithms comparison (RF, SVM, LR)<br>
   • Automated data preprocessing pipelines<br>
-  • Feature importance analysis and selection
+  • Feature importance analysis and selection<br>
+  • Comprehensive model evaluation metrics
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/89%25-ROC--AUC-brightgreen?style=flat-square"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
 </p>
 
 </td>
@@ -311,8 +308,8 @@
 
 <h3 align="center">🏠 Housing Price Prediction</h3>
 <div align="center">  
-  <a href="https://github.com/SamppurnaTH/housing-price-prediction">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=housing-price-prediction&theme=algolia&hide_border=true" />
+  <a href="https://github.com/SamppurnaTH/house-price-regression">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=house-price-regression&theme=algolia&hide_border=true" />
   </a>
 </div>
 <p align="center">
@@ -327,6 +324,105 @@
   <img src="https://img.shields.io/badge/Regression-Models-green?style=flat-square"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
   <img src="https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=python&logoColor=white"/>
+</p>
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+<h3 align="center">📈 Stock Price Prediction (LSTM)</h3>
+<div align="center">  
+  <a href="https://github.com/SamppurnaTH/stock-price-lstm">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=stock-price-lstm&theme=algolia&hide_border=true" />
+  </a>
+</div>
+<p align="center">
+  <strong>LSTM neural network for stock price forecasting</strong><br>
+  • Time-series analysis and prediction<br>
+  • Deep learning approach to financial forecasting<br>
+  • Data normalization and sequence preparation<br>
+  • Model performance evaluation and visualization
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LSTM-Network-9F2B68?style=flat-square"/>
+</p>
+
+</td>
+<td width="50%">
+
+<h3 align="center">❤️ Heart Disease Prediction</h3>
+<div align="center">  
+  <a href="https://github.com/SamppurnaTH/heart-disease-prediction">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=heart-disease-prediction&theme=algolia&hide_border=true" />
+  </a>
+</div>
+<p align="center">
+  <strong>Machine learning model for heart disease risk assessment</strong><br>
+  • Multiple classification algorithms compared<br>
+  • Feature importance and correlation analysis<br>
+  • Model interpretability and clinical relevance<br>
+  • Comprehensive evaluation metrics
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white"/>
+</p>
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+<h3 align="center">🚢 Titanic Dataset Pre-processing</h3>
+<div align="center">  
+  <a href="https://github.com/SamppurnaTH/titanic-pre-processing">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=titanic-pre-processing&theme=algolia&hide_border=true" />
+  </a>
+</div>
+<p align="center">
+  <strong>Comprehensive data cleaning and feature engineering</strong><br>
+  • Handling missing values and outliers<br>
+  • Feature encoding and transformation<br>
+  • Data visualization and exploration<br>
+  • Preparation for machine learning models
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Data_Preprocessing-FF6B6B?style=flat-square"/>
+</p>
+
+</td>
+<td width="50%">
+
+<h3 align="center">🧠 Mental Health Predictor</h3>
+<div align="center">  
+  <a href="https://github.com/SamppurnaTH/mental-health-predictor">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=mental-health-predictor&theme=algolia&hide_border=true" />
+  </a>
+</div>
+<p align="center">
+  <strong>Full-stack AI app combining data science with modern web development</strong><br>
+  • Integrated XGBoost for risk prediction<br>
+  • TextBlob NLP for real-time sentiment scoring<br>
+  • Dynamic dashboards with explainable AI results<br>
+  • Next.js frontend with Flask ML backend
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logo=xgboost&logoColor=white"/>
+  <a href="https://mental-health-predictor-phi.vercel.app">
+    <img src="https://img.shields.io/badge/Live_Demo-46a2f1?style=flat-square&logo=vercel&logoColor=white"/>
+  </a>
 </p>
 
 </td>
@@ -480,9 +576,6 @@
   </a>
   <a href="https://github.com/SamppurnaTH">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000"/>
-  </a>
-  <a href="https://twitter.com/VenuThota">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&labelColor=000"/>
   </a>
   <a href="https://www.instagram.com/fearless_writer_quote">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=000"/>
