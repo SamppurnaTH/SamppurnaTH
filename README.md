@@ -1,329 +1,157 @@
 <div align="center">
-  
-  <!-- Animated Header -->
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Venu%20Thota&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20AI%20Builder%20%7C%20ML%20Explorer&descSize=18&descAlignY=55"/>
-  
+
+<!-- Header Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Venu%20Thota&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20ML%20Engineer&descSize=18&descAlignY=60&descColor=a78bfa"/>
+
 </div>
 
 <div align="center">
-  
-  <!-- Dynamic Typing Animation -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=36BCF7FF&center=true&vCenter=true&multiline=true&width=800&height=80&lines=Turning+Ideas+Into+Impact+%E2%9C%A8;Building+AI+Solutions+That+Matter+%F0%9F%9A%80" alt="Typing Animation"/>
-  
-  <br/>
-  
-  <!-- Profile Badges -->
-  <a href="https://github.com/SamppurnaTH">
-    <img src="https://komarev.com/ghpvc/?username=SamppurnaTH&color=blueviolet&style=for-the-badge&label=Profile+Views" alt="Profile Views"/>
-  </a>
-  <a href="https://github.com/SamppurnaTH?tab=followers">
-    <img src="https://img.shields.io/github/followers/SamppurnaTH?label=Followers&style=for-the-badge&color=brightgreen&logo=github" alt="Followers"/>
-  </a>
-  <a href="https://github.com/SamppurnaTH?tab=repositories">
-    <img src="https://img.shields.io/github/stars/SamppurnaTH?label=Total%20Stars&style=for-the-badge&color=yellow&logo=github" alt="Stars"/>
-  </a>
-  
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&multiline=false&width=700&height=50&lines=Building+AI+that+solves+real+problems.;From+RAG+pipelines+to+full-stack+systems.;Turning+research+into+production.;Learning+by+shipping." alt="Typing SVG" />
+
+<br/>
+
+[![Profile Views](https://komarev.com/ghpvc/?username=SamppurnaTH&color=7c3aed&style=flat-square&label=profile+views)](https://github.com/SamppurnaTH)
+&nbsp;
+[![GitHub Followers](https://img.shields.io/github/followers/SamppurnaTH?label=followers&style=flat-square&color=7c3aed&logo=github)](https://github.com/SamppurnaTH?tab=followers)
+&nbsp;
+[![GitHub Stars](https://img.shields.io/github/stars/SamppurnaTH?label=total+stars&style=flat-square&color=7c3aed&logo=github)](https://github.com/SamppurnaTH?tab=repositories)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-7c3aed?style=flat-square&logo=linkedin)](https://linkedin.com/in/thotavenkatavenu)
+&nbsp;
+[![Portfolio](https://img.shields.io/badge/Portfolio-live-7c3aed?style=flat-square&logo=vercel)](https://venu-profile.vercel.app)
+
 </div>
 
-<br/>
+---
 
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+## `$ whoami`
 
-<br/>
+```yaml
+name: Venu Thota
+role: Full-Stack Developer & AI/ML Engineer
+location: India
+focus:
+  - Building production-grade AI applications
+  - Custom RAG pipelines & LLM integrations
+  - Scalable full-stack systems with seamless AI
+  - Developer tools that amplify human potential
 
-<!-- About Me Section -->
-<div align="center">
-  
-  ## 👨‍💻 About Me
-  
-  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Coding Animation" width="400"/>
-  
-  ### ✨ *"I learn by building — from ML models to full-stack systems to AI assistants"* ✨
-  
-</div>
+currently_building: VeBhav AI — an AI-powered developer assistant
+philosophy: "I learn by building. Research is theory; shipping is proof."
+```
 
-<br/>
-
-<table align="center">
+<table>
 <tr>
 <td width="50%" valign="top">
 
-### 🚀 Currently Building
-
-- **VeBhav AI** – AI-powered developer assistant
-- Custom RAG pipelines with LLM integrations
-- Production-ready AI solutions for real-world problems
-- Full-stack applications with seamless AI integration
-
-### 🎯 2025 Goals
-
-- 🌟 Launch VeBhav AI platform publicly
-- 🔮 Contribute to major open-source AI projects
-- 📚 Master advanced ML architectures (Transformers, GANs)
-- 🏆 Build 10+ production-grade AI applications
+### 🔭 What I'm Working On
+- **VeBhav AI** — AI developer assistant with RAG + LLM stack
+- Custom vector database pipelines (Qdrant, Pinecone)
+- Production ML deployments on AWS & GCP
+- Full-stack apps with Next.js 14 + AI-first architecture
 
 </td>
 <td width="50%" valign="top">
 
-### 🌱 Currently Learning
-
-- Advanced LLM fine-tuning & prompt engineering
-- Vector databases (Qdrant, Pinecone, Weaviate)
-- Cloud-native AI deployment (AWS, GCP, Azure)
-- MLOps & model monitoring best practices
-
-### 💡 What Drives Me
-
-- Solving complex problems with elegant AI solutions
-- Building tools that empower developers
-- Bridging the gap between research and production
-- Creating impactful, user-centric applications
+### 📡 Currently Absorbing
+- Advanced LLM fine-tuning & RLHF techniques
+- MLOps, model monitoring & drift detection
+- Cloud-native AI deployment patterns
+- Transformer internals & attention mechanisms
 
 </td>
 </tr>
 </table>
 
-<br/>
+---
 
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+## ⚙️ Tech Arsenal
 
-<br/>
+### AI / Machine Learning
+![Python](https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=a78bfa)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-111827?style=flat-square&logo=tensorflow&logoColor=a78bfa)
+![PyTorch](https://img.shields.io/badge/PyTorch-111827?style=flat-square&logo=pytorch&logoColor=a78bfa)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-111827?style=flat-square&logo=scikit-learn&logoColor=a78bfa)
+![Pandas](https://img.shields.io/badge/Pandas-111827?style=flat-square&logo=pandas&logoColor=a78bfa)
+![NumPy](https://img.shields.io/badge/NumPy-111827?style=flat-square&logo=numpy&logoColor=a78bfa)
+![OpenAI](https://img.shields.io/badge/OpenAI-111827?style=flat-square&logo=openai&logoColor=a78bfa)
+![HuggingFace](https://img.shields.io/badge/Hugging%20Face-111827?style=flat-square&logo=huggingface&logoColor=a78bfa)
+![LangChain](https://img.shields.io/badge/LangChain-111827?style=flat-square&logo=chainlink&logoColor=a78bfa)
 
-<!-- ML Experience Section -->
-<div align="center">
-  
-  ## 🔬 Machine Learning Experience
-  
-  ### *6 Production-Ready ML Projects from Internship*
-  
-</div>
+### Full-Stack Development
+![TypeScript](https://img.shields.io/badge/TypeScript-111827?style=flat-square&logo=typescript&logoColor=a78bfa)
+![JavaScript](https://img.shields.io/badge/JavaScript-111827?style=flat-square&logo=javascript&logoColor=a78bfa)
+![React](https://img.shields.io/badge/React-111827?style=flat-square&logo=react&logoColor=a78bfa)
+![Next.js](https://img.shields.io/badge/Next.js-111827?style=flat-square&logo=next.js&logoColor=a78bfa)
+![Node.js](https://img.shields.io/badge/Node.js-111827?style=flat-square&logo=node.js&logoColor=a78bfa)
+![Express](https://img.shields.io/badge/Express-111827?style=flat-square&logo=express&logoColor=a78bfa)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-111827?style=flat-square&logo=tailwind-css&logoColor=a78bfa)
+![MongoDB](https://img.shields.io/badge/MongoDB-111827?style=flat-square&logo=mongodb&logoColor=a78bfa)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=a78bfa)
+![Flask](https://img.shields.io/badge/Flask-111827?style=flat-square&logo=flask&logoColor=a78bfa)
 
-<br/>
+### DevOps / Cloud
+![Docker](https://img.shields.io/badge/Docker-111827?style=flat-square&logo=docker&logoColor=a78bfa)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-111827?style=flat-square&logo=kubernetes&logoColor=a78bfa)
+![AWS](https://img.shields.io/badge/AWS-111827?style=flat-square&logo=amazon-aws&logoColor=a78bfa)
+![GCP](https://img.shields.io/badge/GCP-111827?style=flat-square&logo=google-cloud&logoColor=a78bfa)
+![Azure](https://img.shields.io/badge/Azure-111827?style=flat-square&logo=microsoft-azure&logoColor=a78bfa)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-111827?style=flat-square&logo=github-actions&logoColor=a78bfa)
+![Vercel](https://img.shields.io/badge/Vercel-111827?style=flat-square&logo=vercel&logoColor=a78bfa)
+![Git](https://img.shields.io/badge/Git-111827?style=flat-square&logo=git&logoColor=a78bfa)
 
-<table align="center">
-<tr>
-<td align="center" width="33%">
-  <img src="https://img.icons8.com/nolan/64/artificial-intelligence.png" alt="AI Icon"/>
-  <br/><br/>
-  <strong>🩺 Breast Cancer Detection</strong>
-  <br/><br/>
-  <code>SVM Algorithm</code>
-  <br/>
-  <strong>97% Accuracy</strong>
-</td>
-<td align="center" width="33%">
-  <img src="https://img.icons8.com/nolan/64/real-estate.png" alt="Real Estate Icon"/>
-  <br/><br/>
-  <strong>🏠 Housing Price Prediction</strong>
-  <br/><br/>
-  <code>Regression Models</code>
-  <br/>
-  <strong>Feature Engineering</strong>
-</td>
-<td align="center" width="33%">
-  <img src="https://img.icons8.com/nolan/64/iris-flower.png" alt="Iris Icon"/>
-  <br/><br/>
-  <strong>🌸 Iris Classification</strong>
-  <br/><br/>
-  <code>K-Nearest Neighbors</code>
-  <br/>
-  <strong>Multi-class Classification</strong>
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-  <img src="https://img.icons8.com/nolan/64/user-groups.png" alt="User Groups Icon"/>
-  <br/><br/>
-  <strong>🤖 Customer Segmentation</strong>
-  <br/><br/>
-  <code>KMeans Clustering</code>
-  <br/>
-  <strong>Unsupervised Learning</strong>
-</td>
-<td align="center" width="33%">
-  <img src="https://img.icons8.com/nolan/64/line-chart.png" alt="Chart Icon"/>
-  <br/><br/>
-  <strong>📈 Stock Price Forecasting</strong>
-  <br/><br/>
-  <code>LSTM Networks</code>
-  <br/>
-  <strong>Time-Series Analysis</strong>
-</td>
-<td align="center" width="33%">
-  <img src="https://img.icons8.com/nolan/64/neural-network.png" alt="Neural Network Icon"/>
-  <br/><br/>
-  <strong>🧠 Deep Learning Projects</strong>
-  <br/><br/>
-  <code>Neural Networks</code>
-  <br/>
-  <strong>Advanced Architectures</strong>
-</td>
-</tr>
-</table>
+---
 
-<br/>
+## 🧪 Machine Learning Portfolio
 
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+> **6 production-ready ML projects** from internship — each solving a real-world classification, regression, or forecasting problem.
 
-<br/>
+| Project | Algorithm | Result | Domain |
+|---|---|---|---|
+| 🩺 **Breast Cancer Detection** | SVM | **97% accuracy** | Healthcare |
+| 🧠 **Mental Health Risk Predictor** | XGBoost + NLP | Sentiment + risk scoring | Healthcare |
+| ❤️ **Heart Disease Classification** | Random Forest / SVM / LR | Multi-model comparison | Healthcare |
+| 🏥 **Chronic Kidney Disease (CKD)** | Random Forest | Automated preprocessing pipeline | Healthcare |
+| 📈 **Stock Price Forecasting** | LSTM Neural Network | Time-series prediction | Finance |
+| 👥 **Customer Segmentation** | KMeans Clustering | Market profiling | Business |
+| 🏠 **Housing Price Prediction** | Regression Models | Feature engineering + R²/RMSE | Real Estate |
+| 🌸 **Iris Classification** | K-Nearest Neighbors | Multi-class classification | Benchmark |
 
-<!-- Tech Stack Section -->
-<div align="center">
-  
-  ## 🛠️ Technology Stack
-  
-  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,react,nextjs,nodejs,typescript,javascript,mongodb,docker,aws,git&theme=dark" alt="Tech Stack Icons"/>
-  
-</div>
+---
 
-<br/>
+## 🏗️ Featured Projects
 
-### 🤖 AI/ML & Data Science
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
-</p>
-
-### 🌐 Full-Stack Development
-
-<p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
-</p>
-
-### ☁️ DevOps & Cloud
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
-</p>
-
-<br/>
-
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<br/>
-
-<!-- GitHub Stats Section -->
-<div align="center">
-  
-  ## 📊 GitHub Analytics
-  
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SamppurnaTH&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1F6FEB&text_color=C9D1D9"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamppurnaTH&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"/>
-  
-  <br/><br/>
-  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SamppurnaTH&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9"/>
-  
-  <br/><br/>
-  
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SamppurnaTH&bg_color=0D1117&color=58A6FF&line=1F6FEB&point=C9D1D9&area=true&hide_border=true" alt="Contribution Graph"/>
-  
-</div>
-
-<br/>
-
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<br/>
-
-<!-- Featured Projects Section -->
-<div align="center">
-  
-  ## 🏆 Featured Projects
-  
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="50"/>
-  
-</div>
-
-<br/>
-
-### 🤖 AI/ML & Data Science Projects
+### 🤖 AI / ML Projects
 
 <table>
 <tr>
 <td width="50%">
 
-<h3 align="center">🩺 Breast Cancer Detection (SVM)</h3>
+**[🩺 Breast Cancer Detection (SVM)](https://github.com/SamppurnaTH/breast-cancer-svm)**
 
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/breast-cancer-svm">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=breast-cancer-svm&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
+Advanced SVM-based classifier for early detection of malignant tumors.
 
-<p align="center">
-  <strong>Advanced SVM-based classification for early cancer detection</strong>
-</p>
+- `97% accuracy` on held-out test set
+- Full feature scaling & selection pipeline
+- Model interpretability with feature importance
+- Statistical analysis & confusion matrix reporting
 
-**Key Features:**
-- ✅ **97% accuracy** in malignant/benign classification
-- 📊 Comprehensive data preprocessing & feature scaling
-- 📈 Model interpretability with feature importance
-- 🔬 Statistical analysis & performance metrics
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/97%25-Accuracy-brightgreen?style=flat-square"/>
-</p>
+`Python` `Scikit-Learn` `Pandas` `SVM`
 
 </td>
 <td width="50%">
 
-<h3 align="center">🧠 Mental Health Predictor</h3>
+**[🧠 Mental Health Predictor](https://github.com/SamppurnaTH/mental-health-predictor)** · [![Live](https://img.shields.io/badge/live-demo-7c3aed?style=flat-square)](https://mental-health-predictor-phi.vercel.app)
 
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/mental-health-predictor">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=mental-health-predictor&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
+Full-stack AI application for mental health risk assessment.
 
-<p align="center">
-  <strong>Full-stack AI application for mental health assessment</strong>
-</p>
+- XGBoost ML model + TextBlob NLP sentiment
+- Interactive dashboards with explainable AI
+- Next.js 14 frontend + Flask ML backend
+- Deployed on Vercel with CI/CD
 
-**Key Features:**
-- 🤖 XGBoost ML model for risk prediction
-- 💬 Real-time sentiment analysis with TextBlob NLP
-- 📊 Interactive dashboards with explainable AI
-- 🌐 Next.js frontend + Flask ML backend
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
-  <img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat-square"/>
-  <a href="https://mental-health-predictor-phi.vercel.app">
-    <img src="https://img.shields.io/badge/Live_Demo-46a2f1?style=flat-square&logo=vercel&logoColor=white"/>
-  </a>
-</p>
+`Next.js` `Flask` `XGBoost` `NLP` `Vercel`
 
 </td>
 </tr>
@@ -331,119 +159,34 @@
 <tr>
 <td width="50%">
 
-<h3 align="center">👥 Customer Segmentation</h3>
+**[📈 Stock Price Forecasting (LSTM)](https://github.com/SamppurnaTH/stock-price-lstm)**
 
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/customer-segmentation-kmeans">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=customer-segmentation-kmeans&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
+Deep learning model for financial time-series prediction.
 
-<p align="center">
-  <strong>Unsupervised learning for market segmentation</strong>
-</p>
+- LSTM neural network architecture in TensorFlow
+- Time-series preprocessing & windowing
+- Min-max normalization + sequence modeling
+- Performance visualization with Matplotlib
 
-**Key Features:**
-- 🎯 KMeans clustering for customer profiling
-- 📊 Interactive visualization of segments
-- 📈 Elbow method for optimal cluster selection
-- 💼 Business insights & targeting strategies
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/KMeans-Clustering-blue?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=flat-square"/>
-</p>
+`TensorFlow` `Keras` `LSTM` `Time-Series`
 
 </td>
 <td width="50%">
 
-<h3 align="center">📈 Stock Price Prediction (LSTM)</h3>
+**[🏥 CKD Risk Predictor](https://github.com/SamppurnaTH/CKD)**
 
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/stock-price-lstm">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=stock-price-lstm&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
+AI-powered Chronic Kidney Disease risk assessment system.
 
-<p align="center">
-  <strong>Deep learning for financial time-series forecasting</strong>
-</p>
+- Multi-algorithm benchmark (RF, SVM, LR)
+- Automated missing value & outlier pipeline
+- Feature importance analysis & selection
+- Comprehensive precision/recall metrics
 
-**Key Features:**
-- 🧠 LSTM neural network architecture
-- 📊 Time-series analysis & prediction
-- 🔄 Data normalization & sequence preparation
-- 📉 Model performance evaluation & visualization
-
-<p align="center">
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LSTM-Network-9F2B68?style=flat-square"/>
-</p>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%">
-
-<h3 align="center">🏥 CKD Risk Predictor</h3>
-
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/CKD">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=CKD&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
-
-<p align="center">
-  <strong>AI-powered Chronic Kidney Disease risk assessment</strong>
-</p>
-
-**Key Features:**
-- 🔬 Multiple algorithms comparison (RF, SVM, LR)
-- 🔄 Automated preprocessing pipelines
-- 📊 Feature importance analysis
-- ✅ Comprehensive evaluation metrics
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Random_Forest-green?style=flat-square"/>
-  <img src="https://img.shields.io/badge/SVM-orange?style=flat-square"/>
-</p>
-
-</td>
-<td width="50%">
-
-<h3 align="center">❤️ Heart Disease Prediction</h3>
-
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/heart-disease-prediction">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=heart-disease-prediction&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
-
-<p align="center">
-  <strong>ML model for cardiovascular risk assessment</strong>
-</p>
-
-**Key Features:**
-- 🏥 Multiple classification algorithms
-- 📊 Feature correlation analysis
-- 🔍 Model interpretability for clinical use
-- 📈 Comprehensive evaluation metrics
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square"/>
-</p>
+`Scikit-Learn` `Random Forest` `SVM` `Healthcare AI`
 
 </td>
 </tr>
 </table>
-
-<br/>
 
 ### 🌐 Full-Stack Projects
 
@@ -451,285 +194,125 @@
 <tr>
 <td width="50%">
 
-<h3 align="center">💼 Developer Portfolio Website</h3>
+**[💼 Developer Portfolio](https://github.com/SamppurnaTH/portfolio-secure)** · [![Live](https://img.shields.io/badge/live-demo-7c3aed?style=flat-square)](https://venu-profile.vercel.app)
 
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/portfolio-secure">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=portfolio-secure&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
+Modern, performant portfolio with 6+ featured projects.
 
-<p align="center">
-  <strong>Modern, responsive portfolio with 6+ featured projects</strong>
-</p>
+- Next.js 14 + TypeScript, Tailwind CSS
+- Email.js for contact form integration
+- 30% UI performance improvement post-audit
+- Automated CI/CD deployment via Vercel
 
-**Key Features:**
-- ⚡ Built with Next.js 14 & TypeScript
-- 🎨 Tailwind CSS for responsive design
-- 📧 Email.js integration for contact forms
-- 🚀 30% UI performance improvement
-- ☁️ CI/CD deployment on Vercel
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
-  <a href="https://venu-profile.vercel.app">
-    <img src="https://img.shields.io/badge/Live_Demo-46a2f1?style=flat-square&logo=vercel&logoColor=white"/>
-  </a>
-</p>
+`Next.js` `TypeScript` `Tailwind` `Email.js`
 
 </td>
 <td width="50%">
 
-<h3 align="center">🏠 Housing Price Prediction</h3>
+**[🏠 Housing Price Prediction](https://github.com/SamppurnaTH/house-price-regression)**
 
-<div align="center">  
-  <a href="https://github.com/SamppurnaTH/house-price-regression">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=house-price-regression&theme=tokyonight&hide_border=true&bg_color=0D1117" />
-  </a>
-</div>
+Regression system for real estate market valuation.
 
-<p align="center">
-  <strong>Regression models for real estate valuation</strong>
-</p>
+- Linear & polynomial regression benchmarking
+- Advanced feature engineering & selection
+- R², RMSE, MAE evaluation suite
+- Market insights visualized with Seaborn
 
-**Key Features:**
-- 📊 Linear & polynomial regression analysis
-- 🔧 Advanced feature engineering
-- 📈 Multiple evaluation metrics (R², RMSE, MAE)
-- 📉 Real estate market insights visualization
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Regression-Models-green?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=flat-square"/>
-</p>
+`Python` `Regression` `Seaborn` `Feature Engineering`
 
 </td>
 </tr>
 </table>
 
-<br/>
+---
 
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+## 📊 GitHub Analytics
 
-<br/>
-
-<!-- Certifications & Achievements -->
 <div align="center">
-  
-  ## 🏆 Certifications & Achievements
-  
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=SamppurnaTH&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamppurnaTH&layout=compact&langs_count=8&theme=github_dark&hide_border=true&title_color=a78bfa&text_color=e2e8f0&bg_color=0d1117"/>
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=SamppurnaTH&theme=github-dark-blue&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=e2e8f0&sideNums=a78bfa&sideLabels=94a3b8&currStreakNum=a78bfa&dates=94a3b8"/>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=SamppurnaTH&bg_color=0d1117&color=a78bfa&line=7c3aed&point=e2e8f0&area=true&hide_border=true&area_color=7c3aed"/>
+
+</div>
+
+---
+
+## 🏅 Certifications
+
+| Certification | Issuer | Focus |
+|---|---|---|
+| 🎓 ML Internship Certificate | Industry | 6 production ML projects |
+| 🏅 Machine Learning Professional Certificate | IBM | Supervised, Unsupervised, Deep Learning |
+| ☁️ Azure Developer Associate (AZ-204) | Microsoft | Cloud-native app development |
+
+---
+
+## 🎯 2025 Roadmap
+
+```
+[ ] Launch VeBhav AI platform (public beta)
+[ ] Contribute to 3+ major open-source AI/ML projects  
+[ ] Ship 10 production-grade AI applications
+[ ] Master Transformers, GANs & advanced fine-tuning
+[ ] Achieve AWS Solutions Architect certification
+```
+
+---
+
+## 🤝 Let's Build Together
+
+I'm open to collaboration on meaningful AI/ML and full-stack projects.
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-thotavenkatavenu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/thotavenkatavenu)
+&nbsp;
+[![Portfolio](https://img.shields.io/badge/Portfolio-venu--profile.vercel.app-7c3aed?style=for-the-badge&logo=vercel&logoColor=white)](https://venu-profile.vercel.app)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-SamppurnaTH-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SamppurnaTH)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-Reach%20Out-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+
 </div>
 
 <br/>
 
-<table align="center">
-<tr>
-<td align="center" width="33%">
-  <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-achievement-business-and-management-justicon-flat-justicon.png" alt="Achievement"/>
-  <br/><br/>
-  <strong>🎓 ML Internship</strong>
-  <br/><br/>
-  Completed 6 production-ready<br/>machine learning projects
-</td>
-<td align="center" width="33%">
-  <img src="https://img.shields.io/badge/IBM-ML_Certificate-0062FF?style=for-the-badge&logo=ibm&logoColor=white" alt="IBM"/>
-  <br/><br/>
-  <strong>🏅 IBM Certified</strong>
-  <br/><br/>
-  Machine Learning<br/>Professional Certificate
-</td>
-<td align="center" width="33%">
-  <img src="https://img.shields.io/badge/Azure-Developer_Associate-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure"/>
-  <br/><br/>
-  <strong>☁️ Azure Certified</strong>
-  <br/><br/>
-  Azure Developer<br/>Associate (AZ-204)
-</td>
-</tr>
-</table>
+```
+✅  Full-Stack Development (Next.js, Node.js, TypeScript)
+✅  AI/ML Engineering & Consulting
+✅  RAG Pipelines & LLM Integration
+✅  Open Source Contributions
+✅  Technical Mentorship & Writing
+✅  Freelance & Contract Work
+```
 
-<br/>
+---
 
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+### 🐍 Contribution Activity
 
-<br/>
-
-<!-- Skills Proficiency -->
 <div align="center">
-  
-  ## 📈 Skills Proficiency
-  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake-dark.svg">
+</picture>
 </div>
 
-<br/>
-
-<table align="center">
-<tr>
-<td align="center" width="50%" valign="top">
-
-**🎨 Frontend Development**
-
-![React](https://img.shields.io/badge/React-90%25-61DAFB?style=flat-square&logo=react&logoColor=white&labelColor=20232A)
-![JavaScript](https://img.shields.io/badge/JavaScript-85%25-F7DF1E?style=flat-square&logo=javascript&logoColor=black&labelColor=000)
-![TypeScript](https://img.shields.io/badge/TypeScript-80%25-3178C6?style=flat-square&logo=typescript&logoColor=white&labelColor=000)
-![Next.js](https://img.shields.io/badge/Next.js-85%25-000000?style=flat-square&logo=next.js&logoColor=white&labelColor=000)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-80%25-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white&labelColor=000)
-
-<br/>
-
-**⚙️ Backend Development**
-
-![Node.js](https://img.shields.io/badge/Node.js-85%25-339933?style=flat-square&logo=node.js&logoColor=white&labelColor=000)
-![Python](https://img.shields.io/badge/Python-90%25-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=000)
-![MongoDB](https://img.shields.io/badge/MongoDB-80%25-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=000)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-75%25-316192?style=flat-square&logo=postgresql&logoColor=white&labelColor=000)
-![Express](https://img.shields.io/badge/Express.js-80%25-000000?style=flat-square&logo=express&logoColor=white&labelColor=000)
-
-</td>
-<td align="center" width="50%" valign="top">
-
-**🤖 Machine Learning & AI**
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-85%25-FF6F00?style=flat-square&logo=tensorflow&logoColor=white&labelColor=000)
-![PyTorch](https://img.shields.io/badge/PyTorch-80%25-EE4C2C?style=flat-square&logo=pytorch&logoColor=white&labelColor=000)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-90%25-F7931E?style=flat-square&logo=scikit-learn&logoColor=white&labelColor=000)
-![Pandas](https://img.shields.io/badge/Pandas-90%25-150458?style=flat-square&logo=pandas&logoColor=white&labelColor=000)
-![NumPy](https://img.shields.io/badge/NumPy-85%25-013243?style=flat-square&logo=numpy&logoColor=white&labelColor=000)
-
-<br/>
-
-**☁️ DevOps & Cloud**
-
-![Docker](https://img.shields.io/badge/Docker-75%25-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=000)
-![AWS](https://img.shields.io/badge/AWS-70%25-FF9900?style=flat-square&logo=amazon-aws&logoColor=white&labelColor=000)
-![Git](https://img.shields.io/badge/Git-85%25-F05032?style=flat-square&logo=git&logoColor=white&labelColor=000)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-75%25-2088FF?style=flat-square&logo=github-actions&logoColor=white&labelColor=000)
-![Vercel](https://img.shields.io/badge/Vercel-80%25-000000?style=flat-square&logo=vercel&logoColor=white&labelColor=000)
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<br/>
-
-<!-- Connect Section -->
-<div align="center">
-  
-  ## 🤝 Let's Connect & Collaborate
-  
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"/>
-  
-  ### *I'm always open to interesting conversations and collaboration opportunities!*
-  
-  <br/>
-  
-  <a href="https://linkedin.com/in/thotavenkatavenu">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://venu-profile.vercel.app">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white"/>
-  </a>
-  <a href="https://github.com/SamppurnaTH">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://www.instagram.com/fearless_writer_quote">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
-  
-  <br/><br/>
-  
-  ### 💬 Open For
-  
-  ```
-  ✅ Full-Stack Development Projects
-  ✅ AI/ML Consulting & Collaboration
-  ✅ Open Source Contributions
-  ✅ Technical Writing & Mentorship
-  ✅ Freelance Opportunities
-  ```
-  
-</div>
-
-<br/>
-
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<br/>
-
-<!-- Philosophy Section -->
-<div align="center">
-  
-  ## 💭 My Philosophy
-  
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The%20best%20way%20to%20learn%20AI%20is%20by%20building%20applications%20that%20solve%20real%20problems&author=Venu%20Thota"/>
-  
-  <br/><br/>
-  
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
-  
-  <br/>
-  
-  ### ✨ *"Code is poetry written in logic"* ✨
-  
-  <br/>
-  
-  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder" alt="Developer Joke"/>
-  
-</div>
-
-<br/>
-
-<!-- Divider -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<br/>
-
-<!-- Snake Animation -->
-<div align="center">
-  
-  ### 🐍 Contribution Snake
-  
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake.svg">
-  </picture>
-  
-</div>
-
-<br/>
-
-<!-- Footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer"/>
+---
 
 <div align="center">
-  
-  **⭐️ Thanks for visiting! Feel free to star some repos if you find them interesting! ⭐️**
-  
-  <br/>
-  
-  <img src="https://komarev.com/ghpvc/?username=SamppurnaTH&color=blueviolet&style=for-the-badge&label=Profile+Views"/>
-  
-  <br/><br/>
-  
-  Made with ❤️ by [Venu Thota](https://github.com/SamppurnaTH)
-  
-  <br/>
-  
-  *Last Updated: December 2024*
-  
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=120&section=footer"/>
+
+*If you found any of my work useful, a ⭐ on the repo means a lot.*
+
+**Made with focus by [Venu Thota](https://github.com/SamppurnaTH)**
+
 </div>
