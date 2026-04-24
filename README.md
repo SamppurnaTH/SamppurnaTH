@@ -59,42 +59,37 @@ open_to     : [Full-Stack, AI/ML, RAG, Open Source, Freelance, Mentorship]
 
 ## 📊 Live GitHub Analytics
 
-> Every card below fetches **real-time data** from the GitHub API on every page view — commits, streaks, languages, and activity are always current.
-
 <div align="center">
 
-<!-- Commits, PRs, issues, stars, reviews — live from GitHub API -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SamppurnaTH&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&rank_icon=github&show=reviews,prs_merged,prs_merged_percentage"/>
+<!-- Stats card: drop include_all_commits (causes rate-limit errors on public instance) -->
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SamppurnaTH&show_icons=true&theme=github_dark&count_private=true&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&rank_icon=github&cache_seconds=1800"/>
 
-<!-- Language breakdown — recalculated from actual repo code on every request -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamppurnaTH&layout=compact&langs_count=10&theme=github_dark&hide_border=true&title_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&hide=html,css"/>
+<!-- Language breakdown -->
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamppurnaTH&layout=compact&langs_count=8&theme=github_dark&hide_border=true&title_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&hide=html,css&cache_seconds=1800"/>
 
 </div>
 
 <div align="center">
 
-<!-- Current streak, longest streak, total contributions — live -->
-<img src="https://streak-stats.demolab.com?user=SamppurnaTH&theme=dark&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=e2e8f0&sideNums=a78bfa&sideLabels=94a3b8&currStreakNum=a78bfa&dates=94a3b8&stroke=0d1117"/>
+<!-- Current streak, longest streak, total contributions -->
+<img src="https://streak-stats.demolab.com?user=SamppurnaTH&theme=dark&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=e2e8f0&sideNums=a78bfa&sideLabels=94a3b8&currStreakNum=a78bfa&dates=94a3b8&stroke=0d1117&cache_seconds=1800"/>
 
 </div>
 
 <div align="center">
 
-<!-- Contribution heatmap — redraws from GitHub Events API, updates daily -->
+<!-- Contribution heatmap — updates daily from GitHub Events API -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=SamppurnaTH&bg_color=0d1117&color=a78bfa&line=7c3aed&point=e2e8f0&area=true&hide_border=true&area_color=7c3aed&radius=6"/>
 
 </div>
 
 <div align="center">
 
-<!-- Live repo count from GitHub API -->
+<!-- Live public repo count -->
 ![Public Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/SamppurnaTH&query=$.public_repos&label=public+repos&style=flat-square&color=7c3aed&logo=github)
 &nbsp;
-<!-- Last commit to this README -->
+<!-- Last commit timestamp on this README repo -->
 ![Last Updated](https://img.shields.io/github/last-commit/SamppurnaTH/SamppurnaTH?label=last+updated&style=flat-square&color=7c3aed)
-&nbsp;
-<!-- Live: how long account has existed -->
-![Account Age](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/SamppurnaTH&query=$.created_at&label=member+since&style=flat-square&color=7c3aed)
 
 </div>
 
