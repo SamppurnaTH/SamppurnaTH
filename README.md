@@ -1,21 +1,149 @@
-<div align="center">
+import requests
+import json
+from datetime import datetime
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Venu%20Thota&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20ML%20Engineer&descSize=18&descAlignY=60&descColor=a78bfa"/>
+USERNAME = "SamppurnaTH"
+GITHUB_API = "https://api.github.com"
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=700&height=50&lines=Building+AI+that+solves+real+problems.;From+RAG+pipelines+to+full-stack+systems.;Turning+research+into+production.;Learning+by+shipping." alt="Typing SVG"/>
+def get_user(token=None):
+    headers = {"Authorization": f"token {token}"} if token else {}
+    r = requests.get(f"{GITHUB_API}/users/{USERNAME}", headers=headers)
+    return r.json()
+
+def get_repos(token=None):
+    headers = {"Authorization": f"token {token}"} if token else {}
+    repos = []
+    page = 1
+    while True:
+        r = requests.get(
+            f"{GITHUB_API}/users/{USERNAME}/repos?per_page=100&page={page}&sort=updated",
+            headers=headers
+        )
+        data = r.json()
+        if not data:
+            break
+        repos.extend(data)
+        page += 1
+    return repos
+
+def classify_repo(repo):
+    name = repo.get("name", "").lower()
+    desc = (repo.get("description") or "").lower()
+    lang = (repo.get("language") or "").lower()
+    topics = repo.get("topics", [])
+
+    ml_keywords = ["cancer", "disease", "health", "prediction", "classification",
+                   "regression", "neural", "ml", "ai", "iris", "titanic",
+                   "stock", "price", "segmentation", "knn", "lstm", "nlp",
+                   "farm", "detect", "sentiment", "model", "train"]
+    ai_app_keywords = ["vebhav", "meetiq", "shipespace", "farmconnect",
+                       "kareerpilot", "agent", "bot", "assistant", "lms",
+                       "nextgen", "flyhii", "chat", "gpt", "rag"]
+    fullstack_keywords = ["portfolio", "website", "app", "frontend",
+                          "backend", "dashboard", "api", "server"]
+
+    combined = name + " " + desc + " " + " ".join(topics)
+
+    for kw in ai_app_keywords:
+        if kw in combined:
+            return "ai_apps"
+    for kw in ml_keywords:
+        if kw in combined:
+            return "ml"
+    if lang in ["typescript", "javascript"] or any(kw in combined for kw in fullstack_keywords):
+        return "fullstack"
+    if lang == "python":
+        return "ml"
+    return "other"
+
+def build_readme(user, repos):
+    name = user.get("name") or USERNAME
+    bio = user.get("bio") or "Full-Stack Developer & AI/ML Engineer"
+    location = user.get("location") or "India"
+    public_repos = user.get("public_repos", 0)
+    followers = user.get("followers", 0)
+    following = user.get("following", 0)
+    blog = user.get("blog") or "https://venu-profile.vercel.app"
+    updated = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+
+    # Sort and classify repos
+    ai_app_repos, ml_repos, fullstack_repos, other_repos = [], [], [], []
+    for r in repos:
+        if r.get("fork") or r.get("name") == USERNAME:
+            continue
+        cat = classify_repo(r)
+        if cat == "ai_apps":
+            ai_app_repos.append(r)
+        elif cat == "ml":
+            ml_repos.append(r)
+        elif cat == "fullstack":
+            fullstack_repos.append(r)
+        else:
+            other_repos.append(r)
+
+    def pin_card(repo_name, owner=USERNAME):
+        return (
+            f'[![{repo_name}](https://github-readme-stats.vercel.app/api/pin/'
+            f'?username={owner}&repo={repo_name}'
+            f'&theme=github_dark&hide_border=true'
+            f'&title_color=a78bfa&icon_color=a78bfa'
+            f'&text_color=e2e8f0&bg_color=0d1117)]'
+            f'(https://github.com/{owner}/{repo_name})'
+        )
+
+    def repo_row(repos_list, max_show=6):
+        cards = [pin_card(r["name"]) for r in repos_list[:max_show]]
+        rows = []
+        for i in range(0, len(cards), 2):
+            pair = cards[i:i+2]
+            rows.append("\n".join(pair))
+        return "\n\n".join(rows)
+
+    def ml_table(repos_list):
+        rows = []
+        algo_map = {
+            "cancer": "Logistic Regression / SVM",
+            "heart": "Random Forest / SVM / LR",
+            "health": "XGBoost + NLP",
+            "iris": "K-Nearest Neighbors",
+            "titanic": "Data Preprocessing Pipeline",
+            "house": "Linear / Polynomial Regression",
+            "stock": "LSTM Neural Network",
+            "segmentation": "KMeans Clustering",
+            "ckd": "Random Forest",
+        }
+        domain_map = {
+            "cancer": "Healthcare", "heart": "Healthcare",
+            "health": "Healthcare", "iris": "Benchmark",
+            "titanic": "Benchmark", "house": "Real Estate",
+            "stock": "Finance", "segmentation": "Business", "ckd": "Healthcare",
+        }
+        for r in repos_list:
+            n = r["name"].lower()
+            algo = next((v for k, v in algo_map.items() if k in n), r.get("language") or "Python")
+            domain = next((v for k, v in domain_map.items() if k in n), "AI/ML")
+            desc = r.get("description") or r["name"].replace("-", " ").title()
+            link = f'[{r["name"]}](https://github.com/{USERNAME}/{r["name"]})'
+            rows.append(f'| {link} | {desc[:60]} | {algo} | {domain} |')
+        return "\n".join(rows)
+
+    readme = f"""<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text={name.replace(' ', '%20')}&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20ML%20Engineer&descSize=18&descAlignY=60&descColor=a78bfa"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=700&height=50&lines=Building+AI+that+solves+real+problems.;{public_repos}+public+repos+%26+counting.;Learning+by+shipping+in+production." alt="Typing SVG"/>
 
 <br/>
 
-<!-- Live badges: follower/star counts update on every page load via shields.io + GitHub API -->
-[![Profile Views](https://komarev.com/ghpvc/?username=SamppurnaTH&color=7c3aed&style=flat-square&label=profile+views)](https://github.com/SamppurnaTH)
+[![Profile Views](https://komarev.com/ghpvc/?username={USERNAME}&color=7c3aed&style=flat-square&label=profile+views)](https://github.com/{USERNAME})
 &nbsp;
-[![Followers](https://img.shields.io/github/followers/SamppurnaTH?label=followers&style=flat-square&color=7c3aed&logo=github)](https://github.com/SamppurnaTH?tab=followers)
+[![Followers](https://img.shields.io/github/followers/{USERNAME}?label=followers&style=flat-square&color=7c3aed&logo=github)](https://github.com/{USERNAME}?tab=followers)
 &nbsp;
-[![Stars](https://img.shields.io/github/stars/SamppurnaTH?label=total+stars&style=flat-square&color=7c3aed&logo=github)](https://github.com/SamppurnaTH?tab=repositories)
+[![Stars](https://img.shields.io/github/stars/{USERNAME}?label=total+stars&style=flat-square&color=7c3aed&logo=github)](https://github.com/{USERNAME}?tab=repositories)
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-7c3aed?style=flat-square&logo=linkedin)](https://linkedin.com/in/thotavenkatavenu)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-live-7c3aed?style=flat-square&logo=vercel)](https://venu-profile.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-live-7c3aed?style=flat-square&logo=vercel)]({blog if blog.startswith("http") else "https://venu-profile.vercel.app"})
 
 </div>
 
@@ -24,36 +152,15 @@
 ## `$ whoami`
 
 ```yaml
-name        : Venu Thota
-role        : Full-Stack Developer & AI/ML Engineer
-location    : India
-building    : VeBhav AI — AI-powered developer assistant
-philosophy  : "I learn by building. Research is theory; shipping is proof."
-open_to     : [Full-Stack, AI/ML, RAG, Open Source, Freelance, Mentorship]
+name        : {name}
+bio         : {bio}
+location    : {location}
+public_repos: {public_repos}
+followers   : {followers}
+following   : {following}
+portfolio   : {blog if blog else "https://venu-profile.vercel.app"}
+readme_auto : "This README is auto-generated by GitHub Actions on every push"
 ```
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔭 Currently Building
-- **VeBhav AI** — RAG + LLM developer assistant
-- Vector DB pipelines (Qdrant, Pinecone)
-- Production ML deployments on AWS & GCP
-- Next.js 14 + AI-first full-stack apps
-
-</td>
-<td width="50%" valign="top">
-
-### 📡 Currently Learning
-- LLM fine-tuning & RLHF techniques
-- MLOps, model monitoring & drift detection
-- Cloud-native AI deployment patterns
-- Transformer internals & attention mechanisms
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -61,86 +168,57 @@ open_to     : [Full-Stack, AI/ML, RAG, Open Source, Freelance, Mentorship]
 
 <div align="center">
 
-<!-- Stats card: drop include_all_commits (causes rate-limit errors on public instance) -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SamppurnaTH&show_icons=true&theme=github_dark&count_private=true&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&rank_icon=github&cache_seconds=1800"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username={USERNAME}&show_icons=true&theme=github_dark&count_private=true&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&rank_icon=github&cache_seconds=1800"/>
 
-<!-- Language breakdown -->
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamppurnaTH&layout=compact&langs_count=8&theme=github_dark&hide_border=true&title_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&hide=html,css&cache_seconds=1800"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&langs_count=8&theme=github_dark&hide_border=true&title_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&hide=html,css&cache_seconds=1800"/>
 
 </div>
 
 <div align="center">
 
-<!-- Current streak, longest streak, total contributions -->
-<img src="https://streak-stats.demolab.com?user=SamppurnaTH&theme=dark&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=e2e8f0&sideNums=a78bfa&sideLabels=94a3b8&currStreakNum=a78bfa&dates=94a3b8&stroke=0d1117&cache_seconds=1800"/>
+<img src="https://streak-stats.demolab.com?user={USERNAME}&theme=dark&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=e2e8f0&sideNums=a78bfa&sideLabels=94a3b8&currStreakNum=a78bfa&dates=94a3b8&stroke=0d1117&cache_seconds=1800"/>
 
 </div>
 
 <div align="center">
 
-<!-- Contribution heatmap — updates daily from GitHub Events API -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=SamppurnaTH&bg_color=0d1117&color=a78bfa&line=7c3aed&point=e2e8f0&area=true&hide_border=true&area_color=7c3aed&radius=6"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username={USERNAME}&bg_color=0d1117&color=a78bfa&line=7c3aed&point=e2e8f0&area=true&hide_border=true&area_color=7c3aed&radius=6"/>
 
 </div>
 
 <div align="center">
 
-<!-- Live public repo count -->
-![Public Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/SamppurnaTH&query=$.public_repos&label=public+repos&style=flat-square&color=7c3aed&logo=github)
+![Public Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/{USERNAME}&query=$.public_repos&label=public+repos&style=flat-square&color=7c3aed&logo=github)
 &nbsp;
-<!-- Last commit timestamp on this README repo -->
-![Last Updated](https://img.shields.io/github/last-commit/SamppurnaTH/SamppurnaTH?label=last+updated&style=flat-square&color=7c3aed)
+![Last Updated](https://img.shields.io/github/last-commit/{USERNAME}/{USERNAME}?label=readme+updated&style=flat-square&color=7c3aed)
 
 </div>
 
 ---
 
-## 🏗️ Live Repository Cards
-
-> Stars ⭐ forks 🍴 and language tags are pulled fresh from GitHub on every view.
-
-### 🤖 AI / ML
+## 🏗️ AI / Full-Stack Apps
 
 <div align="center">
 
-[![breast-cancer-svm](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=breast-cancer-svm&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/breast-cancer-svm)
-&nbsp;
-[![mental-health-predictor](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=mental-health-predictor&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/mental-health-predictor)
-
-[![stock-price-lstm](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=stock-price-lstm&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/stock-price-lstm)
-&nbsp;
-[![CKD](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=CKD&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/CKD)
-
-[![heart-disease-prediction](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=heart-disease-prediction&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/heart-disease-prediction)
-&nbsp;
-[![customer-segmentation-kmeans](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=customer-segmentation-kmeans&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/customer-segmentation-kmeans)
-
-</div>
-
-### 🌐 Full-Stack
-
-<div align="center">
-
-[![portfolio-secure](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=portfolio-secure&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/portfolio-secure)
-&nbsp;
-[![house-price-regression](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=house-price-regression&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117)](https://github.com/SamppurnaTH/house-price-regression)
+{repo_row(ai_app_repos + fullstack_repos)}
 
 </div>
 
 ---
 
-## 🧪 ML Portfolio
+## 🧪 ML / Data Science
 
-| Project | Algorithm | Metric | Domain |
+<div align="center">
+
+{repo_row(ml_repos)}
+
+</div>
+
+### ML Portfolio
+
+| Repo | Description | Algorithm | Domain |
 |---|---|---|---|
-| 🩺 [Breast Cancer Detection](https://github.com/SamppurnaTH/breast-cancer-svm) | SVM | **97% accuracy** | Healthcare |
-| 🧠 [Mental Health Predictor](https://github.com/SamppurnaTH/mental-health-predictor) | XGBoost + NLP | Risk + sentiment score | Healthcare |
-| ❤️ [Heart Disease Classification](https://github.com/SamppurnaTH/heart-disease-prediction) | RF / SVM / LR | Multi-model benchmark | Healthcare |
-| 🏥 [CKD Risk Predictor](https://github.com/SamppurnaTH/CKD) | Random Forest | Automated pipeline | Healthcare |
-| 📈 [Stock Price Forecasting](https://github.com/SamppurnaTH/stock-price-lstm) | LSTM | Time-series prediction | Finance |
-| 👥 [Customer Segmentation](https://github.com/SamppurnaTH/customer-segmentation-kmeans) | KMeans | Market profiling | Business |
-| 🏠 [Housing Price Prediction](https://github.com/SamppurnaTH/house-price-regression) | Regression | R² / RMSE / MAE | Real Estate |
-| 🌸 Iris Classification | KNN | Multi-class accuracy | Benchmark |
+{ml_table(ml_repos)}
 
 ---
 
@@ -168,6 +246,8 @@ open_to     : [Full-Stack, AI/ML, RAG, Open Source, Freelance, Mentorship]
 ![MongoDB](https://img.shields.io/badge/MongoDB-111827?style=flat-square&logo=mongodb&logoColor=a78bfa)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111827?style=flat-square&logo=postgresql&logoColor=a78bfa)
 ![Flask](https://img.shields.io/badge/Flask-111827?style=flat-square&logo=flask&logoColor=a78bfa)
+![Socket.io](https://img.shields.io/badge/Socket.io-111827?style=flat-square&logo=socket.io&logoColor=a78bfa)
+![Redis](https://img.shields.io/badge/Redis-111827?style=flat-square&logo=redis&logoColor=a78bfa)
 
 ### DevOps / Cloud
 ![Docker](https://img.shields.io/badge/Docker-111827?style=flat-square&logo=docker&logoColor=a78bfa)
@@ -183,13 +263,11 @@ open_to     : [Full-Stack, AI/ML, RAG, Open Source, Freelance, Mentorship]
 
 ## 🐍 Live Contribution Snake
 
-> Redrawn from your actual contribution grid every 12 hours by GitHub Actions.
-
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-snake.svg">
-  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-snake.svg">
+  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-snake-dark.svg">
 </picture>
 </div>
 
@@ -205,29 +283,15 @@ open_to     : [Full-Stack, AI/ML, RAG, Open Source, Freelance, Mentorship]
 
 ---
 
-## 🎯 Feature Roadmap
-
-```
-[ ] Launch VeBhav AI — public beta
-[ ] Contribute to 3+ major open-source AI/ML repos
-[ ] Ship 10 production-grade AI applications
-[ ] Master Transformers, GANs & advanced fine-tuning
-[ ] AWS Solutions Architect certification
-```
-
----
-
 ## 🤝 Let's Build Together
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-thotavenkatavenu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/thotavenkatavenu)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-venu--profile.vercel.app-7c3aed?style=for-the-badge&logo=vercel&logoColor=white)](https://venu-profile.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-live-7c3aed?style=for-the-badge&logo=vercel&logoColor=white)]({blog if blog.startswith("http") else "https://venu-profile.vercel.app"})
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-SamppurnaTH-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SamppurnaTH)
-&nbsp;
-[![Email](https://img.shields.io/badge/Email-Reach%20Out-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-{USERNAME}-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/{USERNAME})
 
 </div>
 
@@ -237,8 +301,20 @@ open_to     : [Full-Stack, AI/ML, RAG, Open Source, Freelance, Mentorship]
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=120&section=footer"/>
 
-*If any of my work helped you, a ⭐ on the repo means a lot.*
+*Auto-generated by GitHub Actions · Last run: {updated}*
 
-**Made with focus by [Venu Thota](https://github.com/SamppurnaTH)**
+**[Venu Thota](https://github.com/{USERNAME})**
 
 </div>
+"""
+    return readme
+
+if __name__ == "__main__":
+    import os
+    token = os.environ.get("GITHUB_TOKEN")
+    user = get_user(token)
+    repos = get_repos(token)
+    readme = build_readme(user, repos)
+    with open("README.md", "w") as f:
+        f.write(readme)
+    print(f"README.md generated with {len(repos)} repos.")
