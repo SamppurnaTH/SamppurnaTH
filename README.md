@@ -295,15 +295,67 @@ I'm open to collaboration on meaningful AI/ML and full-stack projects.
 
 ---
 
-### 🐍 Contribution Activity
+### 🐍 Contribution Snake
+
+> Auto-regenerated every 12 hours via GitHub Actions using [`Platane/snk`](https://github.com/Platane/snk).
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-snake.svg">
+  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/SamppurnaTH/SamppurnaTH/output/github-snake-dark.svg">
 </picture>
 </div>
+
+<details>
+<summary>⚙️ How this is generated — <code>.github/workflows/snake.yml</code></summary>
+
+<br/>
+
+```yaml
+name: Generate snake animation
+on:
+  schedule:
+    - cron: "* */12 * * *"   # runs every 12 hours
+  workflow_dispatch:           # allows manual trigger from Actions tab
+  push:
+    branches:
+      - main                   # also runs on every push to main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: generate snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: push snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+**Setup steps:**
+1. Commit this file to `.github/workflows/snake.yml`
+2. Go to **Actions → Generate snake animation → Run workflow** (manual first run)
+3. After it completes, two SVGs are live on the `output` branch:
+   - `github-snake.svg` — light mode
+   - `github-snake-dark.svg` — dark mode
+
+> Make sure **Settings → Actions → General → Workflow permissions** is set to **Read and write**.
+
+</details>
 
 ---
 
