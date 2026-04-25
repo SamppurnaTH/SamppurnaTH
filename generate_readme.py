@@ -446,6 +446,20 @@ I'm always interested in discussing AI, ML, full-stack development, and open-sou
 
 ---
 
+## 🐍 Contribution Snake
+
+> Visualization of your contribution activity — redrawn every 12 hours from your real GitHub data.
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-snake.svg">
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-snake-dark.svg">
+</picture>
+</div>
+
+---
+
 ## 📝 Stats
 
 - **Total Public Repositories:** {public_repos}
