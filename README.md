@@ -4,7 +4,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=VENU%20THOTA&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20ML%20Engineer&descSize=18&descAlignY=60&descColor=a78bfa"/>
 
 <!-- Animated intro -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;10+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;11+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
 
 <br/>
 
@@ -40,7 +40,7 @@ portfolio         : https://venu-thota-portfolio.vercel.app/
 email             : contact@example.com
 
 stats:
-  public_repos    : 10
+  public_repos    : 11
   total_stars     : 0
   total_forks     : 0
   followers       : 3
@@ -50,11 +50,11 @@ stats:
 
 repo_breakdown:
   ai_apps         : 1
-  ml_projects     : 8
+  ml_projects     : 9
   fullstack       : 1
 
 top_languages   : [Python, Java, Jupyter Notebook]
-last_updated    : May 04, 2026 at 13:50 UTC
+last_updated    : May 04, 2026 at 19:23 UTC
 ```
 
 ---
@@ -62,9 +62,9 @@ last_updated    : May 04, 2026 at 13:50 UTC
 ## 🎯 Current Projects
 
 **Active Development:**
+- 🚀 **Quantedge Bot** — Production-grade stock market decision-support system — regime-aware signals, ATR risk management, backtesting, paper trading, and Telegram alerts for Indian equities
 - 🚀 **Samppurnath** — 🎨 Enhance your GitHub profile with this amazing tool, which allows you to create a personalized README quickly and easily. This profile README generator is the best you'll find 🚀
 - 🚀 **Farmconnect** — KrishiSetu is a web-based agricultural platform that connects farmers directly with markets and stakeholders, enabling efficient supply chain management and better price realization.”
-- 🚀 **Mental Health Predictor** — None
 
 ---
 
@@ -99,7 +99,7 @@ All-time
 
 **Public Repositories**
 
-10
+11
 
 Active Projects
 
@@ -153,23 +153,24 @@ Network
 
 ---
 
-### Machine Learning & Data Science (8)
+### Machine Learning & Data Science (9)
 
 <div align="center">
 
+[![quantedge-bot](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=quantedge-bot&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/quantedge-bot)
 [![mental-health-predictor](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=mental-health-predictor&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/mental-health-predictor)
+
 [![customer-segmentation-kmeans](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=customer-segmentation-kmeans&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/customer-segmentation-kmeans)
-
 [![breast-cancer-svm](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=breast-cancer-svm&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/breast-cancer-svm)
-[![iris-knn-classification](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=iris-knn-classification&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/iris-knn-classification)
 
+[![iris-knn-classification](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=iris-knn-classification&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/iris-knn-classification)
 [![heart-disease-prediction](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=heart-disease-prediction&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/heart-disease-prediction)
-[![breast-cancer-logistic-regression](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=breast-cancer-logistic-regression&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/breast-cancer-logistic-regression)
 
 </div>
 
 | Repository | Description | Language |
 |---|---|---|
+| [quantedge-bot](https://github.com/SamppurnaTH/quantedge-bot) | Production-grade stock market decision-support sys | `Python` |
 | [mental-health-predictor](https://github.com/SamppurnaTH/mental-health-predictor) | Mental Health Predictor | `Jupyter Notebook` |
 | [customer-segmentation-kmeans](https://github.com/SamppurnaTH/customer-segmentation-kmeans) | Customer Segmentation Kmeans | `Python` |
 | [breast-cancer-svm](https://github.com/SamppurnaTH/breast-cancer-svm) | Breast Cancer Svm | `Python` |
@@ -204,7 +205,7 @@ Network
 
 ## 📝 Stats Summary
 
-- **Total Public Repositories:** 10
+- **Total Public Repositories:** 11
 - **Total Stars Earned:** 0
 - **Total Forks:** 0
 - **Total Contributions:** 0
@@ -218,7 +219,7 @@ Network
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=100&section=footer"/>
 
-*🤖 Fully automated README · Last generated May 04, 2026 at 13:50 UTC*
+*🤖 Fully automated README · Last generated May 04, 2026 at 19:23 UTC*
 
 **[VENU THOTA](https://github.com/SamppurnaTH)** • [venu-thota-portfolio.vercel.app/](https://venu-thota-portfolio.vercel.app/)
 
