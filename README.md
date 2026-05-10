@@ -4,7 +4,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=VENU%20THOTA&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20ML%20Engineer&descSize=18&descAlignY=60&descColor=a78bfa"/>
 
 <!-- Animated intro -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;11+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;12+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
 
 <br/>
 
@@ -40,7 +40,7 @@ portfolio         : https://venu-thota-portfolio.vercel.app/
 email             : contact@example.com
 
 stats:
-  public_repos    : 11
+  public_repos    : 12
   total_stars     : 0
   total_forks     : 0
   followers       : 3
@@ -54,7 +54,7 @@ repo_breakdown:
   fullstack       : 1
 
 top_languages   : [Python, Java, Jupyter Notebook]
-last_updated    : May 10, 2026 at 13:09 UTC
+last_updated    : May 10, 2026 at 18:56 UTC
 ```
 
 ---
@@ -99,7 +99,7 @@ All-time
 
 **Public Repositories**
 
-11
+12
 
 Active Projects
 
@@ -205,7 +205,7 @@ Network
 
 ## 📝 Stats Summary
 
-- **Total Public Repositories:** 11
+- **Total Public Repositories:** 12
 - **Total Stars Earned:** 0
 - **Total Forks:** 0
 - **Total Contributions:** 0
@@ -219,7 +219,7 @@ Network
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=100&section=footer"/>
 
-*🤖 Fully automated README · Last generated May 10, 2026 at 13:09 UTC*
+*🤖 Fully automated README · Last generated May 10, 2026 at 18:56 UTC*
 
 **[VENU THOTA](https://github.com/SamppurnaTH)** • [venu-thota-portfolio.vercel.app/](https://venu-thota-portfolio.vercel.app/)
 
