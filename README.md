@@ -4,7 +4,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=VENU%20THOTA&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20ML%20Engineer&descSize=18&descAlignY=60&descColor=a78bfa"/>
 
 <!-- Animated intro -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;12+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;13+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
 
 <br/>
 
@@ -40,7 +40,7 @@ portfolio         : https://venu-thota-portfolio.vercel.app/
 email             : contact@example.com
 
 stats:
-  public_repos    : 12
+  public_repos    : 13
   total_stars     : 0
   total_forks     : 0
   followers       : 3
@@ -53,8 +53,8 @@ repo_breakdown:
   ml_projects     : 9
   fullstack       : 1
 
-top_languages   : [Python, Java, Jupyter Notebook]
-last_updated    : August 23, 2026 at 01:02 UTC
+top_languages   : [Python, Jupyter Notebook, Java]
+last_updated    : August 23, 2026 at 06:33 UTC
 ```
 
 ---
@@ -62,9 +62,9 @@ last_updated    : August 23, 2026 at 01:02 UTC
 ## 🎯 Current Projects
 
 **Active Development:**
-- 🚀 **Quantedge Bot** — Production-grade stock market decision-support system — regime-aware signals, ATR risk management, backtesting, paper trading, and Telegram alerts for Indian equities
+- 🚀 **Yatramind Ai** — None
 - 🚀 **Samppurnath** — 🎨 Enhance your GitHub profile with this amazing tool, which allows you to create a personalized README quickly and easily. This profile README generator is the best you'll find 🚀
-- 🚀 **Farmconnect** — KrishiSetu is a web-based agricultural platform that connects farmers directly with markets and stakeholders, enabling efficient supply chain management and better price realization.”
+- 🚀 **Quantedge Bot** — Production-grade stock market decision-support system — regime-aware signals, ATR risk management, backtesting, paper trading, and Telegram alerts for Indian equities
 
 ---
 
@@ -99,7 +99,7 @@ All-time
 
 **Public Repositories**
 
-12
+13
 
 Active Projects
 
@@ -185,7 +185,7 @@ Network
 ## 🛠️ Tech Stack
 
 **Languages & Frameworks:**
-`Python`, `Java`, `Jupyter Notebook`
+`Python`, `Jupyter Notebook`, `Java`
 
 ---
 
@@ -205,7 +205,7 @@ Network
 
 ## 📝 Stats Summary
 
-- **Total Public Repositories:** 12
+- **Total Public Repositories:** 13
 - **Total Stars Earned:** 0
 - **Total Forks:** 0
 - **Total Contributions:** 0
@@ -219,7 +219,7 @@ Network
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=100&section=footer"/>
 
-*🤖 Fully automated README · Last generated August 23, 2026 at 01:02 UTC*
+*🤖 Fully automated README · Last generated August 23, 2026 at 06:33 UTC*
 
 **[VENU THOTA](https://github.com/SamppurnaTH)** • [venu-thota-portfolio.vercel.app/](https://venu-thota-portfolio.vercel.app/)
 
