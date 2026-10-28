@@ -4,7 +4,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=VENU%20THOTA&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20AI%20Builder%20%E2%80%A2%20ML%20Engineer&descSize=18&descAlignY=60&descColor=a78bfa"/>
 
 <!-- Animated intro -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;13+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3500&pause=1200&color=A78BFA&center=true&vCenter=true&width=800&height=50&lines=Building+AI+that+solves+real+problems.;14+public+repos.;0+total+contributions.;Shipping+production+code+daily." alt="Typing SVG"/>
 
 <br/>
 
@@ -40,7 +40,7 @@ portfolio         : https://venu-thota-portfolio.vercel.app/
 email             : contact@example.com
 
 stats:
-  public_repos    : 13
+  public_repos    : 14
   total_stars     : 0
   total_forks     : 0
   followers       : 3
@@ -49,12 +49,12 @@ stats:
   member_since    : 2023-12-13
 
 repo_breakdown:
-  ai_apps         : 1
+  ai_apps         : 2
   ml_projects     : 10
   fullstack       : 1
 
-top_languages   : [Python, Jupyter Notebook, Java]
-last_updated    : October 28, 2026 at 03:44 UTC
+top_languages   : [Python, Java, Jupyter Notebook]
+last_updated    : October 28, 2026 at 12:00 UTC
 ```
 
 ---
@@ -63,8 +63,8 @@ last_updated    : October 28, 2026 at 03:44 UTC
 
 **Active Development:**
 - 🚀 **Tracepilot Ai** — None
-- 🚀 **Samppurnath** — 🎨 Enhance your GitHub profile with this amazing tool, which allows you to create a personalized README quickly and easily. This profile README generator is the best you'll find 🚀
 - 🚀 **Quantedge Bot** — Production-grade stock market decision-support system — regime-aware signals, ATR risk management, backtesting, paper trading, and Telegram alerts for Indian equities
+- 🚀 **Shipespace** — None
 
 ---
 
@@ -99,7 +99,7 @@ All-time
 
 **Public Repositories**
 
-13
+14
 
 Active Projects
 
@@ -142,11 +142,13 @@ Network
 
 ## 🚀 Featured Projects
 
-### AI / Full-Stack Applications (1)
+### AI / Full-Stack Applications (2)
 
 <div align="center">
 
+[![ShipeSpace](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=ShipeSpace&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/ShipeSpace)
 [![FarmConnect](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=FarmConnect&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/FarmConnect)
+
 [![SamppurnaTH](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=SamppurnaTH&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/SamppurnaTH)
 
 </div>
@@ -186,7 +188,7 @@ Network
 ## 🛠️ Tech Stack
 
 **Languages & Frameworks:**
-`Python`, `Jupyter Notebook`, `Java`
+`Python`, `Java`, `Jupyter Notebook`
 
 ---
 
@@ -206,7 +208,7 @@ Network
 
 ## 📝 Stats Summary
 
-- **Total Public Repositories:** 13
+- **Total Public Repositories:** 14
 - **Total Stars Earned:** 0
 - **Total Forks:** 0
 - **Total Contributions:** 0
@@ -220,7 +222,7 @@ Network
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=100&section=footer"/>
 
-*🤖 Fully automated README · Last generated October 28, 2026 at 03:44 UTC*
+*🤖 Fully automated README · Last generated October 28, 2026 at 12:00 UTC*
 
 **[VENU THOTA](https://github.com/SamppurnaTH)** • [venu-thota-portfolio.vercel.app/](https://venu-thota-portfolio.vercel.app/)
 
