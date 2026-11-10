@@ -41,7 +41,7 @@ email             : contact@example.com
 
 stats:
   public_repos    : 14
-  total_stars     : 0
+  total_stars     : 2
   total_forks     : 0
   followers       : 3
   following       : 0
@@ -54,7 +54,7 @@ repo_breakdown:
   fullstack       : 1
 
 top_languages   : [Python, Java, Jupyter Notebook]
-last_updated    : November 10, 2026 at 01:06 UTC
+last_updated    : November 10, 2026 at 14:12 UTC
 ```
 
 ---
@@ -63,8 +63,8 @@ last_updated    : November 10, 2026 at 01:06 UTC
 
 **Active Development:**
 - 🚀 **Quantedge Bot** — Production-grade stock market decision-support system — regime-aware signals, ATR risk management, backtesting, paper trading, and Telegram alerts for Indian equities
+- 🚀 **Farmconnect** — KrishiSetu is a web-based agricultural platform that connects farmers directly with markets and stakeholders, enabling efficient supply chain management and better price realization.”
 - 🚀 **Samppurnath** — 🎨 Enhance your GitHub profile with this amazing tool, which allows you to create a personalized README quickly and easily. This profile README generator is the best you'll find 🚀
-- 🚀 **Tracepilot Ai** — None
 
 ---
 
@@ -108,7 +108,7 @@ Active Projects
 
 **Total Stars**
 
-0
+2
 
 Community Recognition
 
@@ -146,8 +146,8 @@ Network
 
 <div align="center">
 
-[![ShipeSpace](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=ShipeSpace&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/ShipeSpace)
 [![FarmConnect](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=FarmConnect&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/FarmConnect)
+[![ShipeSpace](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=ShipeSpace&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/ShipeSpace)
 
 [![SamppurnaTH](https://github-readme-stats.vercel.app/api/pin/?username=SamppurnaTH&repo=SamppurnaTH&theme=github_dark&hide_border=true&title_color=a78bfa&icon_color=a78bfa&text_color=e2e8f0&bg_color=0d1117&cache_seconds=3600)](https://github.com/SamppurnaTH/SamppurnaTH)
 
@@ -209,7 +209,7 @@ Network
 ## 📝 Stats Summary
 
 - **Total Public Repositories:** 14
-- **Total Stars Earned:** 0
+- **Total Stars Earned:** 2
 - **Total Forks:** 0
 - **Total Contributions:** 0
 - **GitHub Member Since:** 2023-12-13
@@ -222,7 +222,7 @@ Network
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=100&section=footer"/>
 
-*🤖 Fully automated README · Last generated November 10, 2026 at 01:06 UTC*
+*🤖 Fully automated README · Last generated November 10, 2026 at 14:12 UTC*
 
 **[VENU THOTA](https://github.com/SamppurnaTH)** • [venu-thota-portfolio.vercel.app/](https://venu-thota-portfolio.vercel.app/)
 
