@@ -739,6 +739,9 @@ def picture(name: str, alt: str, width: str | None = None) -> str:
 
 
 def fetch_avatar(url: str) -> str:
+    local = ASSETS / "avatar.jpg"          # a committed photo overrides the GitHub avatar
+    if local.exists():
+        return "data:image/jpeg;base64," + base64.b64encode(local.read_bytes()).decode()
     try:
         req = urllib.request.Request(url + ("&" if "?" in url else "?") + "s=300",
                                      headers={"User-Agent": "profile-readme-generator"})
