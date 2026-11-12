@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<a href="https://github.com/SamppurnaTH"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=760&height=40&lines=I%20build%20AI%20products%20end-to-end%2C%20from%20model%20to%20production.;3%2C416%20contributions%20since%202023;Currently%20building%20tracepilot-ai;Shipping%20with%20Python%20%C2%B7%20Jupyter%20Notebook%20%C2%B7%20Java" alt="I build AI products end-to-end, from model to production."/></a>
+<a href="https://github.com/SamppurnaTH"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=760&height=40&lines=I%20build%20AI%20products%20end-to-end%2C%20from%20model%20to%20production.;3%2C417%20contributions%20since%202023;Currently%20building%20tracepilot-ai;Shipping%20with%20Python%20%C2%B7%20Jupyter%20Notebook%20%C2%B7%20Java" alt="I build AI products end-to-end, from model to production."/></a>
 
 <a href="https://venu-thota-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a> <a href="https://github.com/SamppurnaTH?tab=repositories"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 
@@ -78,36 +78,36 @@ full-time roles, freelance work and collaborations
 <tr>
 <td width="50%" valign="top"><a href="https://github.com/SamppurnaTH/tracepilot-ai"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/tracepilot-ai-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/tracepilot-ai-light.svg"><img src="assets/cards/tracepilot-ai-dark.svg" alt="tracepilot-ai" width="100%"></picture></a>
 
-<p align="center"><sub><a href="https://tracepilot-ai.vercel.app"><b>🌐 Live demo</b></a> &nbsp;·&nbsp; <a href="https://github.com/SamppurnaTH/tracepilot-ai"><b>Source</b></a><br/><code>TypeScript</code> · <code>pytest</code> · <code>React</code> · <code>LLM APIs</code> · <code>Pydantic</code> · <code>Next.js</code></sub></p>
+<p align="center"><sub><a href="https://tracepilot-ai.vercel.app"><b>🌐 Live demo</b></a> &nbsp;·&nbsp; <a href="https://github.com/SamppurnaTH/tracepilot-ai"><b>Source</b></a><br/><code>TypeScript</code> · <code>React</code> · <code>Next.js</code> · <code>LLM APIs</code> · <code>FastAPI</code> · <code>Pydantic</code></sub></p>
 
 </td>
 <td width="50%" valign="top"><a href="https://github.com/SamppurnaTH/ShipeSpace"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/ShipeSpace-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/ShipeSpace-light.svg"><img src="assets/cards/ShipeSpace-dark.svg" alt="ShipeSpace" width="100%"></picture></a>
 
-<p align="center"><sub><a href="https://krevo-web.onrender.com"><b>🌐 Live demo</b></a> &nbsp;·&nbsp; <a href="https://github.com/SamppurnaTH/ShipeSpace"><b>Source</b></a><br/><code>Spring Boot</code> · <code>Testcontainers</code> · <code>OpenAPI</code> · <code>JUnit</code> · <code>Redis</code> · <code>MongoDB</code></sub></p>
+<p align="center"><sub><a href="https://krevo-web.onrender.com"><b>🌐 Live demo</b></a> &nbsp;·&nbsp; <a href="https://github.com/SamppurnaTH/ShipeSpace"><b>Source</b></a><br/><code>MongoDB</code> · <code>Testcontainers</code> · <code>Spring Boot</code> · <code>Redis</code> · <code>OpenAPI</code> · <code>JUnit</code></sub></p>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top"><a href="https://github.com/SamppurnaTH/quantedge-bot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/quantedge-bot-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/quantedge-bot-light.svg"><img src="assets/cards/quantedge-bot-dark.svg" alt="quantedge-bot" width="100%"></picture></a>
 
-<p align="center"><sub><a href="https://github.com/SamppurnaTH/quantedge-bot"><b>Source</b></a><br/><code>Streamlit</code> · <code>pandas</code> · <code>Matplotlib / Plotly</code> · <code>NumPy</code> · <code>Python</code></sub></p>
+<p align="center"><sub><a href="https://github.com/SamppurnaTH/quantedge-bot"><b>Source</b></a><br/><code>pandas</code> · <code>Matplotlib / Plotly</code> · <code>NumPy</code> · <code>Streamlit</code> · <code>Python</code></sub></p>
 
 </td>
 <td width="50%" valign="top"><a href="https://github.com/SamppurnaTH/FarmConnect"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/FarmConnect-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/FarmConnect-light.svg"><img src="assets/cards/FarmConnect-dark.svg" alt="FarmConnect" width="100%"></picture></a>
 
-<p align="center"><sub><a href="https://github.com/SamppurnaTH/FarmConnect"><b>Source</b></a><br/><code>Radix UI</code> · <code>Spring Cloud</code> · <code>Spring Boot</code> · <code>Tailwind CSS</code> · <code>OpenAPI</code> · <code>Testing Library</code></sub></p>
+<p align="center"><sub><a href="https://github.com/SamppurnaTH/FarmConnect"><b>Source</b></a><br/><code>Radix UI</code> · <code>TypeScript</code> · <code>React</code> · <code>Testing Library</code> · <code>Tailwind CSS</code> · <code>Kafka</code></sub></p>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top"><a href="https://github.com/SamppurnaTH/mental-health-predictor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/mental-health-predictor-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/mental-health-predictor-light.svg"><img src="assets/cards/mental-health-predictor-dark.svg" alt="mental-health-predictor" width="100%"></picture></a>
 
-<p align="center"><sub><a href="https://mental-health-predictor-phi.vercel.app/"><b>🌐 Live demo</b></a> &nbsp;·&nbsp; <a href="https://github.com/SamppurnaTH/mental-health-predictor"><b>Source</b></a><br/><code>Radix UI</code> · <code>pandas</code> · <code>NumPy</code> · <code>React</code> · <code>Next.js</code> · <code>FastAPI</code></sub></p>
+<p align="center"><sub><a href="https://mental-health-predictor-phi.vercel.app/"><b>🌐 Live demo</b></a> &nbsp;·&nbsp; <a href="https://github.com/SamppurnaTH/mental-health-predictor"><b>Source</b></a><br/><code>Radix UI</code> · <code>NumPy</code> · <code>Next.js</code> · <code>React</code> · <code>XGBoost</code> · <code>Tailwind CSS</code></sub></p>
 
 </td>
 <td width="50%" valign="top"><a href="https://github.com/SamppurnaTH/YatraMind-AI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/YatraMind-AI-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/cards/YatraMind-AI-light.svg"><img src="assets/cards/YatraMind-AI-dark.svg" alt="YatraMind-AI" width="100%"></picture></a>
 
-<p align="center"><sub><a href="https://github.com/SamppurnaTH/YatraMind-AI"><b>Source</b></a><br/><code>scikit-learn</code> · <code>Hugging Face</code> · <code>Flask</code> · <code>Matplotlib / Plotly</code> · <code>pandas</code> · <code>PyTorch</code></sub></p>
+<p align="center"><sub><a href="https://github.com/SamppurnaTH/YatraMind-AI"><b>Source</b></a><br/><code>pandas</code> · <code>scikit-learn</code> · <code>PyTorch</code> · <code>Hugging Face</code> · <code>NumPy</code> · <code>Flask</code></sub></p>
 
 </td>
 </tr>
@@ -118,13 +118,13 @@ full-time roles, freelance work and collaborations
 
 | Project | What it does | Stack | Active |
 |:--|:--|:--|--:|
-| **[titanic-pre-processing](https://github.com/SamppurnaTH/titanic-pre-processing)** | This project is part of an AI &amp; ML Internship where we clean and preprocess the Titanic… | `scikit-learn`, `Matplotlib / Plotly`, `pandas`, `NumPy`, `Jupyter` | 1y ago |
-| **[heart-disease-prediction](https://github.com/SamppurnaTH/heart-disease-prediction)** | This project is part of an AI &amp; ML Internship, aiming to predict heart disease presence… | `scikit-learn`, `Matplotlib / Plotly`, `pandas`, `NumPy`, `Jupyter` | 1y ago |
-| **[iris-knn-classification](https://github.com/SamppurnaTH/iris-knn-classification)** | This project is part of an AI &amp; ML Internship, aiming to classify Iris flower species… | `scikit-learn`, `Matplotlib / Plotly`, `pandas`, `NumPy`, `Jupyter` | 1y ago |
-| **[customer-segmentation-kmeans](https://github.com/SamppurnaTH/customer-segmentation-kmeans)** | Customer Segmentation - K-Means Clustering | `scikit-learn`, `Matplotlib / Plotly`, `pandas`, `NumPy`, `Jupyter` | 1y ago |
-| **[breast-cancer-svm](https://github.com/SamppurnaTH/breast-cancer-svm)** | Breast Cancer Detection - Support Vector Machines (SVM) | `scikit-learn`, `Matplotlib / Plotly`, `pandas`, `NumPy`, `Jupyter` | 1y ago |
-| **[breast-cancer-logistic-regression](https://github.com/SamppurnaTH/breast-cancer-logistic-regression)** | Logistic Regression model for Breast Cancer Detection (AI &amp; ML Internship Task-4) | `scikit-learn`, `Matplotlib / Plotly`, `pandas`, `NumPy`, `Jupyter` | 1y ago |
-| **[house-price-regression](https://github.com/SamppurnaTH/house-price-regression)** | Housing Price Prediction - Linear Regression (Task-3) | `Matplotlib / Plotly`, `scikit-learn`, `pandas`, `Jupyter` | 1y ago |
+| **[titanic-pre-processing](https://github.com/SamppurnaTH/titanic-pre-processing)** | This project is part of an AI &amp; ML Internship where we clean and preprocess the Titanic… | `pandas`, `scikit-learn`, `Matplotlib / Plotly`, `NumPy`, `Jupyter` | 1y ago |
+| **[heart-disease-prediction](https://github.com/SamppurnaTH/heart-disease-prediction)** | This project is part of an AI &amp; ML Internship, aiming to predict heart disease presence… | `pandas`, `scikit-learn`, `Matplotlib / Plotly`, `NumPy`, `Jupyter` | 1y ago |
+| **[iris-knn-classification](https://github.com/SamppurnaTH/iris-knn-classification)** | This project is part of an AI &amp; ML Internship, aiming to classify Iris flower species… | `pandas`, `scikit-learn`, `Matplotlib / Plotly`, `NumPy`, `Jupyter` | 1y ago |
+| **[customer-segmentation-kmeans](https://github.com/SamppurnaTH/customer-segmentation-kmeans)** | Customer Segmentation - K-Means Clustering | `pandas`, `scikit-learn`, `Matplotlib / Plotly`, `NumPy`, `Jupyter` | 1y ago |
+| **[breast-cancer-svm](https://github.com/SamppurnaTH/breast-cancer-svm)** | Breast Cancer Detection - Support Vector Machines (SVM) | `pandas`, `scikit-learn`, `Matplotlib / Plotly`, `NumPy`, `Jupyter` | 1y ago |
+| **[breast-cancer-logistic-regression](https://github.com/SamppurnaTH/breast-cancer-logistic-regression)** | Logistic Regression model for Breast Cancer Detection (AI &amp; ML Internship Task-4) | `pandas`, `scikit-learn`, `Matplotlib / Plotly`, `NumPy`, `Jupyter` | 1y ago |
+| **[house-price-regression](https://github.com/SamppurnaTH/house-price-regression)** | Housing Price Prediction - Linear Regression (Task-3) | `pandas`, `scikit-learn`, `Matplotlib / Plotly`, `Jupyter` | 1y ago |
 
 </details>
 
@@ -141,7 +141,7 @@ full-time roles, freelance work and collaborations
 <tr><td align="right" width="130"><b>Frontend</b></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite&theme=light&perline=14"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite&theme=dark&perline=14" height="40" alt="Frontend"></picture><br/><img src="https://img.shields.io/badge/Radix%20UI-2-1f2433?style=flat-square&logo=radixui&logoColor=white" alt="Radix UI"> <img src="https://img.shields.io/badge/Zustand-1-1f2433?style=flat-square" alt="Zustand"></td></tr>
 <tr><td align="right" width="130"><b>Backend</b></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=fastapi,spring,flask&theme=light&perline=14"><img src="https://skillicons.dev/icons?i=fastapi,spring,flask&theme=dark&perline=14" height="40" alt="Backend"></picture><br/><img src="https://img.shields.io/badge/OpenAPI-2-1f2433?style=flat-square&logo=swagger&logoColor=white" alt="OpenAPI"> <img src="https://img.shields.io/badge/Pydantic-1-1f2433?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic"> <img src="https://img.shields.io/badge/Spring%20Cloud-1-1f2433?style=flat-square&logo=spring&logoColor=white" alt="Spring Cloud"></td></tr>
 <tr><td align="right" width="130"><b>AI / ML</b></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=sklearn,pytorch&theme=light&perline=14"><img src="https://skillicons.dev/icons?i=sklearn,pytorch&theme=dark&perline=14" height="40" alt="AI / ML"></picture><br/><img src="https://img.shields.io/badge/pandas-10-1f2433?style=flat-square&logo=pandas&logoColor=white" alt="pandas"> <img src="https://img.shields.io/badge/Matplotlib%20%2F%20Plotly-9-1f2433?style=flat-square&logo=plotly&logoColor=white" alt="Matplotlib / Plotly"> <img src="https://img.shields.io/badge/NumPy-9-1f2433?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"> <img src="https://img.shields.io/badge/Jupyter-9-1f2433?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"> <img src="https://img.shields.io/badge/Streamlit-1-1f2433?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"> <img src="https://img.shields.io/badge/LLM%20APIs-1-1f2433?style=flat-square&logo=openai&logoColor=white" alt="LLM APIs"> <img src="https://img.shields.io/badge/Hugging%20Face-1-1f2433?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face"> <img src="https://img.shields.io/badge/XGBoost-1-1f2433?style=flat-square" alt="XGBoost"></td></tr>
-<tr><td align="right" width="130"><b>Data &amp; Infra</b></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=redis,mongodb,postgres,kafka&theme=light&perline=14"><img src="https://skillicons.dev/icons?i=redis,mongodb,postgres,kafka&theme=dark&perline=14" height="40" alt="Data &amp; Infra"></picture></td></tr>
+<tr><td align="right" width="130"><b>Data &amp; Infra</b></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=redis,mongodb,kafka,postgres&theme=light&perline=14"><img src="https://skillicons.dev/icons?i=redis,mongodb,kafka,postgres&theme=dark&perline=14" height="40" alt="Data &amp; Infra"></picture></td></tr>
 <tr><td align="right" width="130"><b>Testing</b></td><td><img src="https://img.shields.io/badge/JUnit-2-1f2433?style=flat-square&logo=junit5&logoColor=white" alt="JUnit"> <img src="https://img.shields.io/badge/pytest-1-1f2433?style=flat-square&logo=pytest&logoColor=white" alt="pytest"> <img src="https://img.shields.io/badge/Testcontainers-1-1f2433?style=flat-square" alt="Testcontainers"> <img src="https://img.shields.io/badge/Testing%20Library-1-1f2433?style=flat-square&logo=testinglibrary&logoColor=white" alt="Testing Library"></td></tr>
 <tr><td align="right" width="130"><b>DevOps &amp; Tools</b></td><td><picture><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=githubactions,vercel,docker,git,github,vscode,linux&theme=light&perline=14"><img src="https://skillicons.dev/icons?i=githubactions,vercel,docker,git,github,vscode,linux&theme=dark&perline=14" height="40" alt="DevOps &amp; Tools"></picture><br/><img src="https://img.shields.io/badge/Render-2-1f2433?style=flat-square&logo=render&logoColor=white" alt="Render"></td></tr>
 </table>
