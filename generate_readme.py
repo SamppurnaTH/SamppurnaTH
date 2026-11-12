@@ -21,6 +21,8 @@ import math
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta, timezone
@@ -66,8 +68,16 @@ def graphql(query: str, variables: dict | None = None) -> dict:
         "Content-Type": "application/json",
         "User-Agent": "profile-readme-generator",
     })
-    with urllib.request.urlopen(req, timeout=60) as r:
-        payload = json.loads(r.read().decode("utf-8"))
+    for attempt in range(5):           # GitHub returns 502/503 on busy or heavy queries
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                payload = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or attempt == 4:
+                raise
+            print(f"GitHub API {e.code}, retrying ({attempt + 1}/4)…")
+            time.sleep(5 * (attempt + 1))
     if payload.get("errors"):
         sys.exit(f"GraphQL error: {payload['errors']}")
     return payload["data"]
@@ -109,7 +119,7 @@ query($login: String!) {
 REPO_QUERY = """
 query($login: String!, $cursor: String, $uid: ID!) {
   user(login: $login) {
-    repositories(first: 50, after: $cursor, privacy: PUBLIC, isFork: false,
+    repositories(first: 15, after: $cursor, privacy: PUBLIC, isFork: false,
                  ownerAffiliations: OWNER, orderBy: {field: PUSHED_AT, direction: DESC}) {
       pageInfo { hasNextPage endCursor }
       nodes {
