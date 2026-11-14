@@ -39,6 +39,11 @@ TAGLINE = "I build AI products end-to-end, from model to production."
 FEATURED_COUNT = 6           # project cards shown in the grid
 EXCLUDE_REPOS = {USERNAME}   # never list these (the profile repo itself)
 ALWAYS_SKILLS = ["git", "github", "vscode", "linux"]  # tools no dependency file reveals
+# Optional overrides. Leave empty to use what is set on the GitHub profile.
+LOCATION = "Andhra Pradesh, India"   # shown instead of the profile's location field
+RESUME_URL = ""                      # link to a résumé PDF; adds a Résumé button when set
+STREAK_MIN = 7      # show the current streak only once it is at least this long
+STARS_MIN = 10      # show stars earned only once there are at least this many
 ACCENT = "#a78bfa"
 ACCENT_DEEP = "#7c3aed"
 
@@ -544,7 +549,8 @@ def stats_svg(t: dict, s: dict) -> str:
         ("commit", "Commits, past year", fmt(s["commits"])),
         ("pr", "Pull requests", fmt(s["prs"])),
         ("repo", "Public repositories", fmt(s["repos"])),
-        ("star", "Stars earned", fmt(s["stars"])),
+        ("star", "Stars earned", fmt(s["stars"])) if s["stars"] >= STARS_MIN
+        else ("calendar", "Active days, past year", fmt(s["active_days"])),
     ]
     body = [title_row("GitHub Stats", "", W)]
     for i, (ic, label, val) in enumerate(rows):
@@ -554,16 +560,19 @@ def stats_svg(t: dict, s: dict) -> str:
                     f'<text x="292" y="{y}" font-size="14" font-weight="700" text-anchor="end">{val}</text></g>')
     cx, cy, r = 385, 128, 48
     circ = 2 * math.pi * r
-    frac = min(1, s["cur"] / max(1, s["long"])) if s["cur"] else 0
+    show_cur = s["cur"] >= STREAK_MIN
+    big, label = (s["cur"], "day streak") if show_cur else (s["long"], "best streak (days)")
+    frac = min(1, s["cur"] / max(1, s["long"])) if show_cur else 1
     body.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{t["grid"]}" stroke-width="8"/>'
                 f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#ac)" stroke-width="8" stroke-linecap="round" '
                 f'stroke-dasharray="{circ:.1f}" stroke-dashoffset="{circ*(1-max(frac, .02)):.1f}" transform="rotate(-90 {cx} {cy})">'
                 f'<animate attributeName="stroke-dashoffset" from="{circ:.1f}" to="{circ*(1-max(frac, .02)):.1f}" '
                 f'dur="1.6s" fill="freeze"/></circle>'
                 f'{icon("flame", cx - 7, cy - 32, "#fb923c")}'
-                f'<text x="{cx}" y="{cy+12}" font-size="30" font-weight="800" text-anchor="middle">{s["cur"]}</text>'
-                f'<text x="{cx}" y="{cy+74}" font-size="12.5" font-weight="600" text-anchor="middle">day streak</text>'
-                f'<text x="{cx}" y="{cy+92}" font-size="11" class="m" text-anchor="middle">best {s["long"]} days</text>')
+                f'<text x="{cx}" y="{cy+12}" font-size="30" font-weight="800" text-anchor="middle">{big}</text>'
+                f'<text x="{cx}" y="{cy+74}" font-size="12.5" font-weight="600" text-anchor="middle">{label}</text>'
+                + (f'<text x="{cx}" y="{cy+92}" font-size="11" class="m" text-anchor="middle">best {s["long"]} days</text>'
+                   if show_cur else ""))
     return svg_wrap(W, H, t, "".join(body), "GitHub stats")
 
 
@@ -794,7 +803,8 @@ def build(user: dict, repos: list[dict], days: dict[date, int]) -> str:
     stats = dict(all_time=sum(days.values()), year=cc["contributionCalendar"]["totalContributions"],
                  commits=cc["totalCommitContributions"], prs=user["pullRequests"]["totalCount"],
                  repos=user["public_repo_count"], stars=sum(r["stargazerCount"] for r in repos),
-                 cur=cur, long=longest)
+                 cur=cur, long=longest,
+                 active_days=sum(1 for d, n in days.items() if n and (NOW.date() - d).days < 365))
     langs = language_shares(repos)
     tech = aggregate_tech(repos)
 
@@ -803,7 +813,7 @@ def build(user: dict, repos: list[dict], days: dict[date, int]) -> str:
     blog = (user["websiteUrl"] or "").strip()
     if blog and not blog.startswith("http"):
         blog = "https://" + blog
-    location = re.sub(r"\s*,\s*", ", ", user["location"] or "").strip()
+    location = LOCATION or re.sub(r"\s*,\s*", ", ", user["location"] or "").strip()
     human = [r for r in repos if r["recent"]]
     building = min(human, key=lambda r: r["age_days"]) if human else None
     top_lang_names = [n for n, _, _ in langs[:3]]
@@ -814,7 +824,7 @@ def build(user: dict, repos: list[dict], days: dict[date, int]) -> str:
                 avatar=fetch_avatar(user["avatarUrl"]),
                 chips=[("pulse", f"{fmt(stats['all_time'])} contributions"),
                        ("repo", f"{stats['repos']} public repos"),
-                       ("flame", f"{cur}-day streak" if cur else f"best streak {longest}d"),
+                       ("flame", f"{cur}-day streak" if cur >= STREAK_MIN else f"best streak {longest}d"),
                        ("pr", f"{fmt(stats['prs'])} pull requests")])
     write_svg("hero", lambda t: hero_svg(t, hero))
     write_svg("stats", lambda t: stats_svg(t, stats))
@@ -830,9 +840,10 @@ def build(user: dict, repos: list[dict], days: dict[date, int]) -> str:
         write_svg(f"cards/{r['name']}", lambda t, r=r: card_svg(t, r))
 
     # ── header ──
+    since = datetime.fromisoformat(user['createdAt'][:10]).strftime('%B %Y')
     typing = ";".join(quote(s) for s in [
         TAGLINE,
-        f"{stats['all_time']:,} contributions since {user['createdAt'][:4]}",
+        f"{stats['all_time']:,} contributions since {since}",
         *([f"Currently building {building['name']}"] if building else []),
         f"Shipping with {' · '.join(top_lang_names)}",
     ])
@@ -844,8 +855,11 @@ def build(user: dict, repos: list[dict], days: dict[date, int]) -> str:
         links.append(badge(label, "", color, logo, acc["url"]))
     if user["email"]:
         links.append(badge("Email", "", "D14836", "gmail", f"mailto:{user['email']}"))
-    links.append(badge("GitHub", "", "181717", "github", f"https://github.com/{USERNAME}?tab=repositories"))
+    if RESUME_URL:
+        links.append(badge("Résumé", "", "0F766E", "readdotcv", RESUME_URL))
 
+    stars_badge = (f'<img src="https://img.shields.io/badge/stars_earned-{stats["stars"]}-7c3aed?style=flat-square'
+                   f'&logo=githubsponsors&logoColor=white" alt="Stars"/>\n' if stats["stars"] >= STARS_MIN else "")
     md = [f"""<a href="{blog or f'https://github.com/{USERNAME}'}">{picture('hero', f'{name}: {HEADLINE}', '100%')}</a>
 
 <div align="center">
@@ -856,8 +870,7 @@ def build(user: dict, repos: list[dict], days: dict[date, int]) -> str:
 
 <img src="https://komarev.com/ghpvc/?username={USERNAME}&color=7c3aed&style=flat-square&label=profile+views" alt="Profile views"/>
 <img src="https://img.shields.io/github/followers/{USERNAME}?style=flat-square&color=7c3aed&label=followers&logo=github" alt="Followers"/>
-<img src="https://img.shields.io/badge/stars_earned-{stats['stars']}-7c3aed?style=flat-square&logo=githubsponsors&logoColor=white" alt="Stars"/>
-
+{stars_badge}
 </div>
 """]
 
@@ -865,13 +878,14 @@ def build(user: dict, repos: list[dict], days: dict[date, int]) -> str:
     md.append(section("👋 About me"))
     md.append(f"> {md_esc(user['bio'] or TAGLINE)}\n")
     facts = [("📍", "Based in", f"**{md_esc(location or 'Earth')}**"),
-             ("🗓️", "On GitHub since", f"**{datetime.fromisoformat(user['createdAt'][:10]).strftime('%B %Y')}**")]
+             ("🗓️", "On GitHub since", f"**{since}**")]
     if building:
         facts.append(("🔭", "Currently building", f"**[{building['name']}]({building['url']})**: {md_esc(building['summary'])}"))
     focus = [c for c in ("AI / ML", "Full-stack", "Backend") if any(c in r["tags"] for r in repos)]
     if focus:
         facts.append(("🧠", "Focus areas", f"**{' · '.join(focus)}** across {len(repos)} public projects"))
-    facts.append(("⚡", "Past year", f"**{stats['year']:,}** contributions · **{cur}**-day streak (best **{longest}**)"))
+    streak = f"**{cur}**-day streak (best **{longest}**)" if cur >= STREAK_MIN else f"best streak **{longest}** days"
+    facts.append(("⚡", "Contributions", f"**{stats['all_time']:,}** since {since} · {streak}"))
     if user["isHireable"]:
         facts.append(("🤝", "Open to", "full-time roles, freelance work and collaborations"))
     md.append("<table>\n" + "\n".join(
